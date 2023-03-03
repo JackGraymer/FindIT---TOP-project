@@ -18,3 +18,7 @@ body, html{
   padding: 0;
   background-color: #191919;
 }
+
+#root, .App{
+  height: 100%;
+}

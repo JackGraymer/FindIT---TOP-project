@@ -1,14 +1,21 @@
-import logo from './loupe.png';
 import './App.css';
-import { BrowserRouter, Router } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 import Header from './components/header';
+import Home from "./components/home.js"
+import Leaderboard from './components/leaderboard';
+
 
 function App() {
   return (
     <div className="App">
+      
       <Header/>
-          
-        </div>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="leaderboard" element={<Leaderboard/>} />
+        <Route path="contact"  />
+      </Routes>
+    </div>
   );
 }
 
