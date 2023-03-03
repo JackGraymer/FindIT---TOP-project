@@ -14,10 +14,18 @@
 
 .title{
     font-size: 30pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .title-it{
     color: red;
+}
+
+.loupe{
+    width: 46px;
+    padding-left: 0.2em;
 }
 
 .links{

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom'
 import './header.css'
 import github from './square-github.svg'
+import loupe from './loupe.png'
 
 let startTime = Date.now()
 
@@ -19,7 +20,12 @@ function Header () {
 
     return(
         <div className="header">
-            <div className='title'><Link  to='/'>🅵🅸🅽🅳<span className='title-it'>🅸🆃</span></Link></div>
+            <div className='title'>
+                <Link className='title' to='/'>
+                    🅵🅸🅽🅳<span className='title-it'>🅸🆃</span>
+                    <img className='loupe' src={loupe} alt='Github Link'></img>
+                </Link>
+            </div>
             <div className='timer'>Timer {timer}</div>
             <div className='links'>
                 <NavLink to='leaderboard'>Leaderboard</NavLink> 
