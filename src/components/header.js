@@ -10,13 +10,13 @@ function Header () {
 
     const [timer, setTimer] = useState(null)
 
-    /* useEffect(() => {
+    useEffect(() => {
         setInterval(function() {
             let time = ((Date.now() - startTime)/1000).toFixed(2)
             setTimer(time);
-        },100 );
+        },10 );
             
-    }) */
+    })
 
     return(
         <div className="header">

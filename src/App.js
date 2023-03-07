@@ -3,6 +3,7 @@ import {Routes, Route } from 'react-router-dom';
 import Header from './components/header';
 import Home from "./components/home.js"
 import Leaderboard from './components/leaderboard';
+import Game from './components/game';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="leaderboard" element={<Leaderboard/>} />
         <Route path="contact"  />
+        <Route path="game/:image" element={<Game/>} />
       </Routes>
     </div>
   );
