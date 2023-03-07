@@ -1,13 +1,15 @@
 .header{
-    font-size: larger;
-    display: flex;
-    justify-content: space-around;
+    font-size: x-large;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: space-around; */
     align-items: center;
     background-color: #252525;
     color: wheat ;
 }
 
 .header>div{
+    display: flex;
     align-items: center;
     justify-content: center;
 }
